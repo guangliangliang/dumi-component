@@ -4,11 +4,11 @@
  * @Autor: unicom
  * @Date: 2020-12-28 17:08:16
  * @LastEditors: unicom
- * @LastEditTime: 2020-12-28 17:54:25
+ * @LastEditTime: 2020-12-29 09:52:08
  */
 import { defineConfig } from 'dumi';
 
-const repo = 'dumi-template';
+const repo = 'gll-dumi-coomponent';
 
 export default defineConfig({
   title: repo,
@@ -28,9 +28,17 @@ export default defineConfig({
     null,
     {
       title: 'GitHub',
-      path: 'https://github.com/umijs/dumi-template',
+      path: 'https://github.com/umijs/gll-dumi-coomponent',
     },
   ],
+  /*  locales: [
+    ['zh-CN', '中文'],
+    ['en-US', 'English'],
+  ], */
+  // 用于切换 antd 暗黑模式
+  // antd: {
+  //   dark: true,
+  // },
   theme: {
     '@c-heading': '#454d64',
     //主题颜色变量名称参照 https://github.com/umijs/dumi/blob/master/packages/theme-default/src/style/variables.less

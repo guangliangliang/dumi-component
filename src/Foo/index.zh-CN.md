@@ -1,6 +1,7 @@
 ---
 nav:
   title: 组件
+  order: 1
   path: /components
 ---
 
@@ -10,7 +11,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'dumi-template';
+import { Foo } from 'gll-dumi-coomponent';
 
 export default () => <Foo title="First Demo" />;
 ```
