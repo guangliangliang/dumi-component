@@ -65,4 +65,8 @@ function TemplateHook(props) {
     </div>
   );
 }
+
+TemplateHook.defaultProps = {
+  name: 'default',
+};
 export default TemplateHook;
