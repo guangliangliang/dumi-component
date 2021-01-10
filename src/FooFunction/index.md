@@ -12,7 +12,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { FooFunction } from 'gll-dumi-coomponent';
+import { FooFunction } from 'dumi-component';
 
 export default () => (
   <>

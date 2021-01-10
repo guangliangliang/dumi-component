@@ -10,7 +10,7 @@
 
 ## ✨ 在线预览
 
-https://umijs.github.io/gll-dumi-coomponent/
+https://umijs.github.io/dumi-component/
 
 ## 📒 目录介绍
 

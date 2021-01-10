@@ -12,7 +12,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { TemplateHook } from 'gll-dumi-coomponent';
+import { TemplateHook } from 'dumi-component';
 export default () => <TemplateHook name={'test'} />;
 ```
 

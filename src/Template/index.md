@@ -12,7 +12,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { Template } from 'gll-dumi-coomponent';
+import { Template } from 'dumi-component';
 export default () => (
   <Template
     optionalString=""
