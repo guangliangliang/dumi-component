@@ -1,18 +1,18 @@
 ---
 nav:
-  title: Components
+  title: 组件
+  order: 3
   path: /components
 ---
 
-## Foo
+## Template-hook
 
 Demo:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'dumi-component';
-
-export default () => <Foo title="First Demo" />;
+import { TemplateHook } from 'dumi-component';
+export default () => <TemplateHook name={'test'} />;
 ```
 
 More skills for writing demo: https://d.umijs.org/guide/demo-principle

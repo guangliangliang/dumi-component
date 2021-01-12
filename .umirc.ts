@@ -4,7 +4,7 @@
  * @Autor: unicom
  * @Date: 2021-01-10 21:15:30
  * @LastEditors: unicom
- * @LastEditTime: 2021-01-10 21:20:41
+ * @LastEditTime: 2021-01-12 14:07:08
  */
 import { defineConfig } from 'dumi';
 
@@ -27,6 +27,10 @@ export default defineConfig({
       title: 'GitHub',
       path: 'https://github.com/umijs/gll-dumi-coomponent',
     },
+  ],
+  locales: [
+    ['zh-CN', '中文'],
+    ['en-US', 'English'],
   ],
   // more config: https://d.umijs.org/config
 });
