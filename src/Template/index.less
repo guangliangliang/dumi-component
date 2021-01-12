@@ -1,4 +1,3 @@
-// @import '~antd/lib/style/themes/default.less';
 @tempData: 10px;
 .common(@justifyContent:center,@alignItems:center) {
   //默认值使用;没有默认值,
@@ -9,8 +8,6 @@
 .parent {
   width: 100%;
   height: 100%;
-  :global {
-  }
   &:hover {
     background: 'red';
   }
@@ -30,15 +27,4 @@
   @media @min768 {
     font-size: 1.2rem;
   }
-}
-
-//映射
-#colors() {
-  primary: blue;
-  secondary: green;
-}
-
-.tempButton {
-  color: #colors[primary];
-  border: 1px solid #colors[secondary];
 }

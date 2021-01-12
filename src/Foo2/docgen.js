@@ -3,10 +3,10 @@
 /*
  * @Description:  到当前路径下执行 node .\docgen.js生成md文件
  * @Version: 1.0
- * @Autor: gll
+ * @Autor: unicom
  * @Date: 2020-12-21 11:56:49
  * @LastEditors: unicom
- * @LastEditTime: 2021-01-12 13:52:38
+ * @LastEditTime: 2020-12-30 16:58:56
  */
 
 const path = require('path');
@@ -15,13 +15,13 @@ const reactDocs = require('react-docgen');
 const prettier = require('prettier');
 
 // 读取文件内容
-const content = fs.readFileSync(path.resolve('./index.jsx'), 'utf-8');
+const content = fs.readFileSync(path.resolve('./index.tsx'), 'utf-8');
 // 提取组件信息
 const componentInfo = reactDocs.parse(content);
 // 打印信息
 // console.log(componentInfo)
 // 生成markdown文档
-fs.writeFileSync(path.resolve('./index.md'), commentToMarkDown(componentInfo));
+fs.writeFileSync(path.resolve('./temp.md'), commentToMarkDown(componentInfo));
 
 // 把react-docgen提取的信息转换成markdown格式
 function commentToMarkDown(componentInfo) {

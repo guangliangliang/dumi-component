@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable @typescript-eslint/ban-types */
+/* eslint-disable react/require-default-props */
 import React, { useState } from 'react';
 import { Button } from 'antd';
 import './index.less';
