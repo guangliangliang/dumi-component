@@ -18,8 +18,11 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "node verify-commit.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -60,6 +63,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "father-build": "^1.19.1",
     "gh-pages": "^3.0.0",
+    "husky": "^4.3.7",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "stylelint": "^13.8.0",
