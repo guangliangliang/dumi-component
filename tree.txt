@@ -1,0 +1,87 @@
+
+/**
+ * 模版组件
+ * @description 模版组件
+ * @class Persion
+ * @extends {Component}
+ * @author: unicom
+ *
+ */
+生成项目树结构(参考：https://segmentfault.com/a/1190000022900724)
+	一、
+	     安装tree-node-cli
+     	     npm install -g tree-node-cli
+	二、
+	     treee -L 3 -I "node_modules|.idea|objects|.git" -a --dirs-first
+	三、
+	     复制控制太内容
+
+
+zh-CN后缀和没有后缀的代表中文文档
+en-US后悔的代表英文文档
+
+unicomcomponents                   项目名称
+├── docs                                md文档存放文件夹
+│   ├── config                              配置项md文件夹
+│   │   ├── frontmatter.en-US.md           frontmatter配置文件,md文件头部的配置项内容 
+│   │   ├── frontmatter.md      
+│   │   ├── index.en-US.md      	 给.umirc.ts文件提供的配置项 	
+│   │   └── index.md
+│   ├── index.en-US.md	      dumi默认的md文件	
+│   ├── index.md
+│   ├── intro.en-US.md	      文档页面的md文件	
+│   └── intro.md
+├── src			源代码
+│   ├── .umi		       umi的默认文件不可修改
+│   │   ├── .cache
+│   │   ├── core
+│   │   ├── dumi
+│   │   └── umi.ts
+│   ├── Foo		typescript组件样例
+│   │   ├── index.en-US.md
+│   │   ├── index.md
+│   │   └── index.tsx
+│   ├── FooFunction	typescriptFunction组件样例
+│   │   ├── index.en-US.md
+│   │   ├── index.less
+│   │   ├── index.md
+│   │   └── index.tsx
+│   ├── Template		jsxClass组件样例
+│   │   ├── config.js		配置一些常量和默认值
+│   │   ├── docgen.js	生成组件属性表格md文件
+			使用node docgen.js执行生成文件
+			目前只支持jsxClass这种方式
+│   │   ├── index.d.ts	在typescript环境下对外生成当前jsx文件的参数类型	
+│   │   ├── index.en-US.md	英文文档
+│   │   ├── index.jsx		组件内容
+│   │   ├── index.less	样式
+│   │   └── index.md	中文文档
+│   ├── TemplateHook	jsxFunction组件样例
+│   │   ├── config.js
+│   │   ├── index.d.ts
+│   │   ├── index.en-US.md
+│   │   ├── index.jsx
+│   │   ├── index.less
+│   │   └── index.md
+│   └── index.ts		用来将需要导出的组件导出
+├── .babelrc			babel配置文件
+├── .editorconfig		编辑器编码规范配置文件,用于高度编译器本项目的一些编码规范,
+├── .fatherrc.ts		father-build配置文件
+├── .eslintignore		eslint不匹配的文件
+├── .eslintrc.js		eslint配置文件
+├── .gitignore		设置不会提交到远程分支上的文件和文件夹
+├── .prettierignore		设置不被prettierrc格式化的文件和文件夹
+├── .prettierrc		设置prettierrc规范
+├── .umirc.ts		配置dumi属性
+├── LICENSE		使用协议和bai服务条款
+├── package-lock.json	自动生成依赖配置文件
+├── package.json		npm依赖配置文件
+├── README.md		项目介绍英文
+├── README.zh-CN.md	项目介绍中文
+├── tree.md		项目目录介绍
+├── tsconfig.json		如果一个目录下存在一个tsconfig.json文件，
+			那么它意味着这个目录是TypeScript项目的根目录。 
+			tsconfig.json文件中指定了用来编译这个项目的根文件和编译选项。
+└── typings.d.ts		通过typings.json配置可以辅助IDE，给出有智能的提示信息，
+			以及重构的依据。因此需要在typings.json文件中配置
+			TypeScript类型定义文件（文件名后缀为.d.ts）
